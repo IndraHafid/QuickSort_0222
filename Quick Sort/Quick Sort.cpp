@@ -87,6 +87,23 @@ void q_short(int low, int high)
     //recursuve call to sort the right sub array
 
     q_short(j + 1, high); //step 13
+
+}
+
+void display()
+{
+    cout << "\n---------------" << endl;
+    cout << "Sorted Array" << endl;
+    cout << "\n---------------" << endl;
+
+    for (int i = 0; i < n; i++)
+    {
+        cout << arr[i] << "";
+    }
+
+    cout << "\n\nNumber of comparasions :" << cmp_count << endl;
+    cout << "Number of data movments :" << mov_count << endl;
+
 }
 
 int main()
